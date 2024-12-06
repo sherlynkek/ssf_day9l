@@ -23,7 +23,7 @@ public class CarparkService {
                 .get("http://localhost:3000/api/carparks/rates")
                 .build();
 
-        ResponseEntity<List<Carpark>> resCarparkRates = restTemplate.exchange(null,
+        ResponseEntity<List<Carpark>> resCarparkRates = restTemplate.exchange(req,
                 new ParameterizedTypeReference<List<Carpark>>() {});
 
         List<Carpark> carparkRates = new ArrayList<>();
