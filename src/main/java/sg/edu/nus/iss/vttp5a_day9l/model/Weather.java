@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.vttp5a_day9l.model;
+/* package sg.edu.nus.iss.vttp5a_day9l.model;
 
 public class Weather {
     private String country;
@@ -59,3 +59,4 @@ public class Weather {
         this.co = co;
     }
 }
+ */

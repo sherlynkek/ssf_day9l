@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.vttp5a_day9l.service;
+/* package sg.edu.nus.iss.vttp5a_day9l.service;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -16,3 +16,4 @@ public class WeatherService {
         return restTemplate.getForEntity(weatherAPIUrl, String.class);
     }
 }
+ */
