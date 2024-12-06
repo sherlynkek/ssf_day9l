@@ -16,6 +16,9 @@ import sg.edu.nus.iss.vttp5a_day9l.service.WeatherService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonReader;
 
 import org.springframework.web.bind.annotation.RequestParam;
 
