@@ -17,6 +17,6 @@ public class WeatherRestController {
 
     @GetMapping
     public ResponseEntity<String> getWeatherData() {
-        return weatherRestService.getWeatherData();
+       return weatherRestService.getWeatherData();
     }
 }

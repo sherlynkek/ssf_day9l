@@ -10,21 +10,21 @@ import sg.edu.nus.iss.vttp5a_day9l.constant.Constant;
 
 @Service
 public class WeatherRestService {
-
-    RestTemplate restTemplate = new RestTemplate();
     
+    RestTemplate restTemplate = new RestTemplate();
+
     public ResponseEntity<String> getWeatherData() {
         String url = UriComponentsBuilder
-            .fromUriString(Constant.weatherUrl)
-            .queryParam("key", Constant.apiKey)
-            .queryParam("q", "Singapore")
-            .queryParam("aqi", "no")
-            .toUriString();
-
+                .fromUriString(Constant.weatherURl)
+                .queryParam("key", Constant.apiKey)
+                .queryParam("q", "London")
+                .queryParam("aqi", "no")
+                .toUriString();
+        
         RequestEntity<Void> req = RequestEntity.get(url).build();
-        ResponseEntity<String> resp = restTemplate.exchange(req, String.class);
 
-        return resp;
+        ResponseEntity<String> res = restTemplate.exchange(req, String.class);
+
+        return res;
     }
-    
 }
